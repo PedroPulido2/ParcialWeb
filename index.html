@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial Pedro Pulido</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div style="width: 100%; max-width: fit-content; margin: 0 auto; margin-top: 30px;">
+        <h1>Formulario</h1>
+    </div>
+
+    <div style="width: 100%; max-width: fit-content; margin: 0 auto; margin-top: 30px;">
+    
+        <label class="form-label">Apellido</label>
+        <input type="text" id="txtApellido" class="form-control" aria-describedby="passwordHelpBlock">
+        <div  class="form-text">
+          Solo ingresar texto.
+        </div>
+
+        <label  class="form-label">Nombre</label>
+        <input type="text" id="txtNombre" class="form-control" aria-describedby="passwordHelpBlock">
+        <div  class="form-text">
+            Solo ingresar texto.        </div>
+
+        <label class="form-label">Departamento</label>
+        <select class="form-select" aria-label="Default select example" id="filterDepartament">
+            <option selected> </option>
+          </select>
+        <div  class="form-text">
+            Ingrese un Departamento </div>
+
+        <label class="form-label">Municipio</label>
+        <select class="form-select" aria-label="Default select example" id="filterMunicipio">
+            <option selected> </option>
+          </select>
+        <div  class="form-text">
+            Ingrese un municipio        </div>
+
+        <label  class="form-label">FechaNacimiento</label>
+        <input type="date" id="txtFechaNacimiento" class="form-control" aria-describedby="passwordHelpBlock">
+        <div  class="form-text">
+            Ingrese su fecha de nacimiento        </div>
+
+        <label class="form-label">Salario</label>
+        <input type="text" id="txtSalario" class="form-control" aria-describedby="passwordHelpBlock">
+        <div class="form-text">
+            Solo se admiten numeros        </div>
+
+    </div>
+    <p></p>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="btnConsult" class="btn btn-primary" id="btnEnviar">Enviar</button>
+    </div>
+    
+    <p></p>
+
+    <div style="width: 100%; max-width: fit-content; margin: 0 auto; margin-top: 30px;">
+        <h1>Busqueda del empleado</h1>
+
+        <label class="form-label">ID Empleado</label>
+        <input type="text" id="txtIdEmpleado" class="form-control" aria-describedby="passwordHelpBlock">
+        <div class="form-text">
+            Solo se admiten numeros        </div>
+
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="btnConsult" class="btn btn-primary" id="btnConsult">Enviar</button>
+        </div>
+    </div>
+
+
+
+    <div style="width: 100%; max-width: fit-content; margin: 0 auto; margin-top: 30px;">
+        <h1>Tabla</h1>
+    </div>
+
+    <div style="width: 100%; max-width: 1400px; margin: 0 auto; margin-top: 30px;">
+        <table class="table table-striped" id="table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Apellidos y Nombres</th>
+                <th>Ciudad</th>
+                <th>Edad</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/logic.js"></script>
+</body>
+</html>
